@@ -119,6 +119,15 @@ function dragula (initialContainers, options) {
     if (!_grabbed) {
       return;
     }
+
+    drake.emit('beforeDrag', e, _grabbed.item, _grabbed.source);
+
+    if (e.stop === true) {
+      release();
+
+      return;
+    }
+
     if (whichMouseButton(e) === 0) {
       release({});
       return; // when text is selected on an input and then dragged, mouseup doesn't fire. this is our only hope
