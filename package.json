@@ -1,7 +1,7 @@
 {
   "name": "dragula10",
-  "version": "10",
-  "description": "Drag and drop so simple it hurts(3.7.2)",
+  "version": "10.0.1",
+  "description": "Drag and drop(modification dragula 3.7.2)",
   "main": "dragula.js",
   "scripts": {
     "build": "npm run scripts && npm run styles",
@@ -14,19 +14,13 @@
     "start": "watchify -dvo example/example.min.js example/example.js & watchify -dvs dragula -o dist/dragula.js dragula.js & stylus -w dragula.styl --import node_modules/nib -o dist",
     "styles": "stylus dragula.styl --import node_modules/nib -o dist && cleancss dist/dragula.css -o dist/dragula.min.css",
     "sync": "git checkout gh-pages ; git merge master ; git push ; git checkout master",
-    "lint": "jshint . --reporter node_modules/jshint-stylish/index.js",
-    "test": "npm run lint && browserify test/*.js | tape-run",
-    "test-watch": "hihat test/*.js -p tap-dev-tool"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/FI-LIFE/dragula.git"
   },
-  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
+  "author": "Evgeniy Naumenko <justfilife@gmail.com> (https://neugen.ru/)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/FI-LIFE/dragula/issues"
-  },
   "homepage": "https://github.com/FI-LIFE/dragula",
   "dependencies": {
     "contra": "1.9.4",

@@ -1,3 +1,7 @@
+# 10.0.1
+
+- Add beforeDrag event
+
 # 3.7.2 Parental Control
 
 - Fixed a bug where a missing parent check would cause exceptions
