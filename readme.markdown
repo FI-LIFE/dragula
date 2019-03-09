@@ -10,12 +10,6 @@ You can get it on npm.
 npm install dragula10 --save
 ```
 
-Or bower, too.
-
-```shell
-bower install dragula10 --save
-```
-
 ##### Including the CSS!
 
 There's [a few CSS styles][16] you need to incorporate in order for `dragula` to work as expected.
