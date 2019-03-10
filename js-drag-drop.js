@@ -6,7 +6,7 @@ var classes = require('./classes');
 var doc = document;
 var documentElement = doc.documentElement;
 
-function dragula (initialContainers, options) {
+function jsDragDrop (initialContainers, options) {
   var len = arguments.length;
   if (len === 1 && Array.isArray(initialContainers) === false) {
     options = initialContainers;
@@ -614,4 +614,4 @@ function getCoord (coord, e) {
   return host[coord];
 }
 
-module.exports = dragula;
+module.exports = jsDragDrop;
