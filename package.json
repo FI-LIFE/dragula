@@ -1,6 +1,6 @@
 {
   "name": "js-drag-drop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Drag and drop",
   "main": "js-drag-drop.js",
   "scripts": {
